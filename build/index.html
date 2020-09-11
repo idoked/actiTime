@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Test project</title>
+    <meta name="description" content="Test for actiTIME">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta property="og:image" content="img/general/logo.svg" />
+    <meta property="og:title" content="Test project" />
+    <meta property="og:description" content="Test for actiTIME" />
+		
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.min.css"/>
+		<link rel="stylesheet" href="css/style.min.css"/>
+		
+  </head>
+  <body>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+
+					<a href="/" class="logo">
+						<img src="img/general/logo.svg" alt="Logo">
+					</a>
+
+
+						<nav class="header__nav">
+							<a href="#" class="header__link">About</a>
+
+							<div class="header__parent">
+								<a href="#" class="header__link">
+									Help
+								</a>
+
+								<div class="header__drop">
+									<a class="header__drop-link" href="#">User Guide</a>
+									<a class="header__drop-link" href="#">Contact Support</a>
+								</div>
+							</div>
+							
+							<a href="#" class="header__link">Features</a>
+						</nav>
+	
+						<button class="btn header__btn btn--purple">Sign Up</button>
+
+
+					<div id="js-burger" class="header__burger">
+
+					</div>
+
+				</div>
+			</div>
+
+			<div id="js-menu" class="mobile-menu">
+
+				<nav class="mobile-menu__nav">
+
+					<div class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">About</a>
+					</div>
+
+					<div class="mobile-menu__parent">
+						<div class="mobile-menu__toggle">
+							<a href="#" class="mobile-menu__link">
+								Help
+							</a>
+						</div>
+
+						<div class="mobile-menu__drop">
+							<a class="mobile-menu__drop-link" href="#">User Guide</a>
+							<a class="mobile-menu__drop-link" href="#">Contact Support</a>
+						</div>
+					</div>
+					<div class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Features</a>
+					</div>
+					
+				</nav>
+
+				<button class="btn mobile-menu__btn btn--purple">Sign Up</button>
+
+			</div>
+			
+		</header>
+
+		<div class="features">
+			<div class="container">
+				<section class="features__head">
+					<h1 class="features__title">Features</h1>
+					<p class="features__subtitle">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
+				</section>
+
+				<section class="slider">
+
+					<div class="slider__item">
+						<div class="card">
+
+							<div class="card__num">1</div>
+	
+							<div class="card__content">
+								<div class="card__title">First Feature</div>
+								<p class="card__text">
+									Little Red Cap opened her eyes and when she saw the sunbeams dancing to and fro through the trees and how the ground was covered with beautiful flowers.
+								</p>
+								<a href="#" class="more-link">
+									Learn more
+									<img class="more-link__ico" src="img/general/arrow-link.svg" alt="Arrow">
+								</a>
+							</div>
+	
+						</div>
+					</div>
+
+					<div class="slider__item">
+						<div class="card">
+
+							<div class="card__num">2</div>
+	
+							<div class="card__content">
+								<div class="card__title">Second Feature</div>
+								<p class="card__text">
+									Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods.							
+								</p>
+								<a href="#" class="more-link">
+									Learn more
+									<img class="more-link__ico" src="img/general/arrow-link.svg" alt="Arrow">
+								</a>
+							</div>
+	
+						</div>
+					</div>
+
+					<div class="slider__item">
+						<div class="card">
+
+							<div class="card__num">3</div>
+	
+							<div class="card__content">
+								<div class="card__title">Third Feature</div>
+								<p class="card__text">
+									The wolf pressed the latch, and the door opened. He stepped inside, went straight to the grandmother's bed, and ate her up.							
+								</p>
+								<a href="#" class="more-link">
+									Learn more
+									<img class="more-link__ico" src="img/general/arrow-link.svg" alt="Arrow">
+								</a>
+							</div>
+	
+						</div>
+					</div>
+
+					<div class="slider__item">
+						<div class="card">
+
+							<div class="card__teg">New</div>
+	
+							<div class="card__num">4</div>
+	
+							<div class="card__content">
+								<div class="card__title">Fourth Feature</div>
+								<p class="card__text">
+									Little Red Cap had run after the flowers. After she had gathered so many that she could not carry any more, she remembered her grandmother.					
+								</p>
+								<a href="#" class="more-link">
+									Learn more
+									<img class="more-link__ico" src="img/general/arrow-link.svg" alt="Arrow">
+								</a>
+							</div>
+	
+						</div>
+					</div>
+
+				</section>
+			</div>
+		</div>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+
+						<a href="/" class="logo footer__logo logo--white">
+							<img src="img/general/logo--white.svg" alt="Logo">
+						</a>
+	
+						<nav class="footer__nav">
+							<a href="#" class="footer__nav-link">About Us</a>
+							<a href="#" class="footer__nav-link">Privacy Policy</a>
+						</nav>
+				
+					<form class="sign-up-form footer__sign-up-form" action="#">
+						<input class="sign-up-form__input" type="email" name="email" placeholder="Enter your email">
+						<button class="btn btn--orange sign-up-form__btn" type="submit">Sign Up Now</button>
+					</form>
+
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+		<script src="js/common.min.js"></script>
+		
+  </body>
+</html>
