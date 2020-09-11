@@ -29,12 +29,16 @@
 			padding: 52px 0 37px 0;
 		}
 
+	}
+
+	@media ($tablet) {
 		&__nav {
-			grid-area: nav;
-			flex-direction: column;
-			align-items: flex-start;
+			display: block;
 		}
 
+		&__nav-link {
+			display: block;
+		}
 	}
 
 	@media ($mobile) {
