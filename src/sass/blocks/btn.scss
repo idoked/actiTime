@@ -1,0 +1,32 @@
+.btn {
+	display: inline-block;
+	border: none;
+	outline: none;
+	appearance: none;
+	background-color: transparent;
+	color: $white;
+	font-weight: 500;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: 50px;
+	transition: .2s background-color ease;
+
+	&--purple {
+		background-color: $purple;
+	
+		&:hover {
+			background-color: $light-purple;
+		}
+		
+	}
+
+	&--orange {
+		background-color: $orange;
+
+		&:hover {
+			background-color: $light-orange;
+		}
+		
+	}
+
+}

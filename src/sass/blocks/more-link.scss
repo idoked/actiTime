@@ -1,0 +1,25 @@
+.more-link {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 26%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	letter-spacing: 0.005em;
+	color: $black;
+	transition: .2s color ease;
+
+	&:hover {
+		color: $purple;
+
+	}
+
+	&:hover &__ico {
+		transform: translateX(10px);
+	}
+
+	&__ico {
+		transition: .2s transform ease;
+		margin-left: 14px;
+	}
+}

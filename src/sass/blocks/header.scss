@@ -1,41 +1,169 @@
 .header {
-	background-color: $white;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	z-index: 2;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: #FFFEFD;
 
-	&__row {
+  &__row {
+		display: grid;
+		align-items:center;
+		grid-template-columns: 49px 1fr 1fr;
+		padding: 30px 0;
+	}
+
+	&__btn {
+		padding: 0 59px;
+		height: 60px;
+		margin-left: auto;
+		width: 180px;
+		line-height: 60px;
+	}
+
+	&__burger {
+		display: none;
+		width: 36px; 
+		height: 28px;
+		background-image: url(../img/general/menu-burger.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+    background-size: auto;
+    transition: .2s background-image ease;
+		cursor: pointer;
+
+		&--opened {
+			background-image: url(../img/general/menu-cross.svg);
+		}
+		
+	}
+	
+	&__nav {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		height: $header-height;
+		justify-content: center;
 	}
-}
 
-.nav {
-	display: flex;
-
-	a {
-		text-decoration: none;
-		margin-right: 30px;
+	&__link {
+		margin-right: 47px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 29px;
 		color: $black;
-		cursor: pointer;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 19px;
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-		text-shadow:
-   -1px -1px 0 $white,  
-    1px -1px 0 $white,
-    -1px 1px 0 $white,
-     1px 1px 0 $white;
+		transition: .2s color ease;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
 
-		&:last-child {
-			margin: 0;
+		&:hover {
+			color: $purple;
 		}
+
 	}
+
+	&__parent {
+		position: relative;
+		padding-bottom: 20px;
+		margin-bottom: -20px;
+	}
+
+	&__parent &__link::after{
+		content: "";
+		display: block;
+		width: 10px;
+		margin-left: 4px;
+		height: 7px;
+		transition: .2s background-image ease;
+		background-image: url(../img/general/arrow-small--black.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&__parent &__link:hover::after {
+		background-image: url(../img/general/arrow-small--purple.svg);
+	}
+
+	&__parent:hover &__link {
+		color: $purple;
+	}
+
+	&__parent:hover &__link::after {
+		transform: rotate(180deg);
+		background-image: url(../img/general/arrow-small--purple.svg);
+	}
+
+	&__drop {
+		position: absolute;
+		background-color: $white;
+		opacity: 0;
+		visibility: hidden;
+		padding: 12px 17px 12px 24px;
+		box-sizing: content-box;
+		display: block;
+		min-width: 169px;
+		border: 1px solid $purple;
+		transition: .2s opacity ease;
+		border-radius: 10px;
+		box-shadow: 0px 4px 0px #E2CEFE;
+		width: 100%;
+		transform: translateY(16px);
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			top: -10px;
+			left: 36px;
+			background-color: $white;
+			border-top: 1px solid $purple;
+			border-right: 1px solid $purple;
+			z-index: 2;
+			transform: rotate(-45deg);
+		}
+
+	}
+
+	&__drop-link {
+		font-size: 16px;
+		color: $black;
+		display: block;
+		line-height: 35px;
+		transition: .2s color ease;
+
+		&:hover {
+			color: $purple;
+		}
+
+	}
+
+	&__parent:hover &__drop {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+
+  @media ($tablet) {
+		position: relative;
+		
+		&__row {
+			grid-template-columns: 49px 1fr;
+			padding: 25px 0;
+		}
+		
+    &__burger {
+			display: block;
+			margin-left: auto;
+		}
+		
+		&__nav {
+			display: none;
+		}
+
+		&__btn {
+			display: none;
+		}
+  }
+
+  @media ($mobile) { 
+
+    &__row {
+      padding: 25px 0;
+    }
+  }
 }

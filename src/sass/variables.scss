@@ -1,16 +1,15 @@
 // Colors
 $white: #FFFFFF;
-$black: #1A212F;
-$orange: #FF7236;
-$yellow: #FAC663;
-$grey: #E1E1E1;
+$black: #212353;
+$orange: #EEAA12;
+$light-orange: #FFBE2D;
+$purple: #9C69E2;
+$light-purple: #B17FF4;
+$grey: #4B5D68;
+$pink: #F063B8;
 
 // Размеры
-
-$header-height: 71px;
-
-// Размеры
-$mobile-widths-only: "max-width: 767px";
-$tablet-widths: "min-width: 768px";
-$tablet-widths-only: "max-width: 1199px";
-$desktop-widths: "min-width: 1200px";
+$mobile: "max-width: 767px";
+$tablet: "max-width: 992px";
+$desktop-small: "max-width: 1440px";
+$desktop-only: "min-width: 992px";

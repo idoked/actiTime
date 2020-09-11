@@ -1,0 +1,47 @@
+.features {
+
+	&__head {
+		padding-top: 91px;
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		margin: 0;
+		line-height: 52px;
+	}
+
+	&__subtitle {
+		max-width: 650px;
+		font-size: 23px;
+		line-height: 37px;
+		color: $grey;
+		margin: 37px  auto 0 auto;
+	}
+
+	@media ($desktop-small) { 
+		&__head {
+			padding-top: 45px;
+		}
+	}
+
+	@media ($mobile) { 
+		.container {
+			width: 100%;
+			padding: 0;
+		}
+
+		&__title {
+			font-size: 35px;
+			line-height: 45px;
+		}
+
+		&__subtitle {
+			font-size: 23px;
+			line-height: 37px;
+			padding: 0 20px;
+		}
+	}
+
+}
